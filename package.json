@@ -1,0 +1,20 @@
+{
+  "name": "twispack",
+  "version": "0.1.0",
+  "description": "A WordPress starter theme with TailwindCSS v4 & Rspack, made for heavy custom development from scratch. Crappy, crabbily fast, and unnecessarily edgy.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/cli": "^1.2.2",
+    "@rspack/core": "^1.2.2",
+    "@tailwindcss/postcss": "^4.0.2",
+    "postcss": "^8.5.1",
+    "postcss-loader": "^8.1.1",
+    "tailwindcss": "^4.0.2"
+  }
+}
