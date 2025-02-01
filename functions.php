@@ -39,9 +39,11 @@ function twispack_register_menus()
   register_nav_menu('main_menu', 'Main Menu');
   /* Print this menu in the theme template by copying this code:
     <?php
-      if (has_nav_menu( 'main_menu') :
-        wp_nav_menu(array('theme_location' => 'main_menu'));
-      endif;
+      if (has_nav_menu( 'main_menu')) {
+        wp_nav_menu([
+          'theme_location' => 'main_menu'
+        ]);
+      }
     ?>
   */
 }
@@ -57,4 +59,5 @@ function twispack_mime_types($mimes)
 }
 add_filter('upload_mimes', 'twispack_mime_types');
 
-require_once get_template_directory() . '/inc/custom-settings.php';
+require_once get_template_directory() . '/inc/settings.php';
+require_once get_template_directory() . '/inc/blocks.php';

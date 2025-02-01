@@ -4,9 +4,5 @@ A WordPress starter theme with TailwindCSS v4 & Rspack, made for heavy custom de
 
 ## Development
 
-`npm i`
-`npm run build`
-
-## Credits
-
-I copy and modify `index.php` and `functions.php` from https://github.com/davidegreenwald/Bare-Minimum
+- `npm i`
+- `npm run build`

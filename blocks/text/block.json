@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "twispack/text",
+	"version": "0.1.0",
+	"title": "Text",
+	"category": "theme",
+	"description": "",
+  "keywords": ["text"],
+	"example": {},
+	"attributes": {
+		"text": {
+			"type": "string"
+    }
+	},
+	"textdomain": "twispack",
+	"editorScript": "file:./dist/index.js",
+	"render": "file:./render.php"
+}

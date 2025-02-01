@@ -4,6 +4,7 @@
   "description": "A WordPress starter theme with TailwindCSS v4 & Rspack, made for heavy custom development from scratch. Crappy, crabbily fast, and unnecessarily edgy.",
   "main": "index.js",
   "scripts": {
+    "build:blocks": "rspack build --config blocks/rspack.config.mjs",
     "build": "rspack build"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
     "@rspack/cli": "^1.2.2",
     "@rspack/core": "^1.2.2",
     "@tailwindcss/postcss": "^4.0.2",
+    "@wordpress/blocks": "^14.6.0",
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
     "tailwindcss": "^4.0.2"

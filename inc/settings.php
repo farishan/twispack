@@ -61,7 +61,7 @@ function custom_logo_field_callback($args)
 
           mediaUploader.open();
         },
-        clear() {
+        remove() {
           this.value = '';
         }
       }">
@@ -72,9 +72,9 @@ function custom_logo_field_callback($args)
         </div>
       </template>
 
-      <button type="button" class="button" @click="openMediaUploader()">Upload</button>
+      <button type="button" class="button" @click="openMediaUploader()">Choose image</button>
       <input x-show="value" readonly type="url" name="<?php echo esc_attr($option_name); ?>" x-model="value" class="regular-text">
-      <button x-show="value" type="button" class="button" @click="clear()">Clear</button>
+      <button x-show="value" type="button" class="button" @click="remove()">Remove</button>
     </div>
   <?php endif; ?>
 <?php
