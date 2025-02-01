@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:blocks": "rspack build --config blocks/rspack.config.mjs",
-    "build": "rspack build"
+    "build:templates": "rspack build",
+    "build": "npm run build:blocks && npm run build:templates"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@rspack/core": "^1.2.2",
     "@tailwindcss/postcss": "^4.0.2",
     "@wordpress/blocks": "^14.6.0",
+    "motion": "^12.0.6",
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
     "tailwindcss": "^4.0.2"

@@ -11,7 +11,7 @@ export default {
       },
     ],
   },
-  resolve: {
-    extensions: ['.css']
-  }
+  // resolve: {
+  //   extensions: ['.css']
+  // }
 };

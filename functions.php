@@ -22,7 +22,8 @@ if (! function_exists('twispack_enqueue_scripts')) {
   function twispack_enqueue_scripts()
   {
     wp_enqueue_style('style', get_stylesheet_uri());
-    wp_enqueue_style('tw', get_template_directory_uri() . '/dist/main.css');
+    wp_enqueue_style('main-style', get_template_directory_uri() . '/dist/main.css');
+    wp_enqueue_script('main-script', get_template_directory_uri() . '/dist/main.js', null, false, ['in_footer' => true]);
   }
   add_action('wp_enqueue_scripts', 'twispack_enqueue_scripts');
 

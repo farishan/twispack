@@ -14,7 +14,7 @@
     <?php $logo_light = get_option('logo_light'); ?>
 
     <div class="container flex justify-between">
-      <h1 class="text-3xl font-bold">
+      <h1 class="text-3xl font-bold text-red-600">
         <a href="/">
           <?php if ($logo_dark) : ?>
             <img src="<?php echo $logo_dark; ?>" alt="<?php bloginfo('name'); ?>" class="max-w-20 lg:max-w-40 object-contain" />

@@ -1,4 +1,5 @@
 /* Always check `./dist/index.js` after import something new here. */
+import BlockTitle from '../_components/BlockTitle';
 import metadata from './block.json'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,10 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div {...useBlockProps()}>
             <Card>
               <CardHeader>
-                <div style={{
-                  fontSize: `12px`,
-                  lineHeight: `100%`
-                }}><em>Block: {metadata.name}</em></div>
+                <BlockTitle name={metadata.name} />
               </CardHeader>
               <CardBody>
                 <TextControl

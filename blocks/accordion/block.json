@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "twispack/accordion",
+	"version": "0.1.0",
+	"title": "Accordion",
+	"category": "theme",
+	"description": "",
+  "keywords": ["accordion"],
+	"example": {},
+	"attributes": {
+		"items": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"title": { "type": "string", "default": "Accordion Title" },
+					"content": { "type": "string", "default": "Accordion Content" }
+				}
+			}
+		}
+	},
+	"textdomain": "twispack",
+	"editorScript": "file:./dist/index.js",
+	"render": "file:./render.php",
+  "viewScript": "file:./dist/view.js"
+}
