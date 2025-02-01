@@ -9,9 +9,17 @@
 
   <body <?php body_class(); ?>>
     <header class="py-8 border-b">
+      <?php $logo_dark = get_option('logo_dark'); ?>
+      <?php $logo_light = get_option('logo_light'); ?>
       <div class="container">
         <h1 class="text-3xl font-bold">
-          <a href="/"><?php bloginfo( 'name' ); ?></a>
+          <a href="/">
+            <?php if ($logo_dark) : ?>
+              <img src="<?php echo $logo_dark; ?>" alt="<?php bloginfo( 'name' ); ?>" class=" max-w-40 object-contain" />
+            <?php else: ?>
+              <?php bloginfo( 'name' ); ?>
+            <?php endif; ?>
+          </a>
         </h1>
       </div>
 	  </header>

@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "sperovita.alpinejs-syntax-highlight",
+    "bradlc.vscode-tailwindcss",
+    "bmewburn.vscode-intelephense-client"
+  ]
+}
